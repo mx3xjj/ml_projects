@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=XrxgdpduWOU
+http://mnemstudio.org/path-finding-q-learning-tutorial.htm
+https://studywolf.wordpress.com/2012/11/25/reinforcement-learning-q-learning-and-exploration/
