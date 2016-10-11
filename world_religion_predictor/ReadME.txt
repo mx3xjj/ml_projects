@@ -1,5 +1,1 @@
-I have included 3 files in this submission:
-
-iPython notebook - MLEND_P5.ipynb
-Dataset - flags.csv
-Report - MLEND-P5.pdf
+End to end Machine Learning project on building a model that can predict the major religions of each country in the world based on their flag design.

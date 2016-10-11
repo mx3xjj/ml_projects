@@ -1,0 +1,1 @@
+Did analysis on the types of customers for a wholesale distributor to help them make better, more informed business decisions in the future. Used unsupervised learning techniques to see if any similarities exist between customers, and how to best segment customers into distinct categories and make informed decisions on delivery mechanisms based on these findings.
