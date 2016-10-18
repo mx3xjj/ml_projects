@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="chartContainer">
+        <script src="http://d3js.org/d3.v3.min.js">
+        </script> 
+        <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js">
+        </script> 
+        <script src=
+        "//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js">
+        </script> 
+        <script type="text/javascript">
+         function draw1(data){
+            // Create SVG element
+            var svg = dimple.newSvg("#chartContainer", 800, 400);
+            var margin = 50;
+
+            d3.select('body')
+              .append('h2');
+          // instantiate chart object
+          var myChart = new dimple.chart(svg, data);
+          // set boundary for the plot
+          myChart.setBounds(60, 30, 510, 330)
+          // set up the data to be plotted
+          var x = myChart.addCategoryAxis("x", ["type", "technology"]);
+          var y = myChart.addMeasureAxis("y", 'percent_value' );
+          myChart.addSeries("technology", dimple.plot.bar);
+          myChart.addLegend(65, 10, 510, 20, "technology");
+          // add x and y axis title
+          x.title = "Reservation type";
+          y.title = "Percent of bookings";
+          // draw plot
+          myChart.draw();  
+      };
+    
+      </script>        
+        <script type="text/javascript">
+        // load final csv file 
+        d3.csv("part2.csv", draw1);       
+        </script> 
+    </div>
+</body>
+</html>
